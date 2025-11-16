@@ -48,6 +48,7 @@ export default function Products() {
                                     border: "1px solid #ccc",
                                     outline: "none",
                                     fontSize: "14px",
+                                    
                                 }}
                             />
 
@@ -56,7 +57,7 @@ export default function Products() {
                                     position: "absolute",
                                     right: "0",
                                     top: "0",
-                                    height: "height: 36,",
+                                    height: "height: 36px,",
                                     width: "99px",
                                     border: "none",
                                     borderRadius: "17px",
@@ -189,7 +190,7 @@ export default function Products() {
                             <PaginationItem
                             components={{
                                 previous: ArrowBackIcon,
-                                next: ArrowBackIcon,
+                                next: ArrowForwardIcon,
                             }}
                             {...item}
                             color={"secondary"}
@@ -203,19 +204,40 @@ export default function Products() {
              <div className={"brand-logo"}>
                 <Box className={"logo-text"}> Our Family Brands</Box>
                 <Stack className={"burak-foto"}>
+                    <Box className={"burak-box"}><img src={"/img/gurme.webp"} alt="Safood Logo" /></Box>
                     <Box className={"burak-box"}><img src={"/img/seafood.webp"} alt="Safood Logo" /></Box>
-                    <Box className={"burak-box"}><img src={"/img/seafood.webp"} alt="Safood Logo" /></Box>
-                    <Box className={"burak-box"}><img src={"/img/seafood.webp"} alt="Safood Logo" /></Box>
-                    <Box className={"burak-box"}><img src={"/img/seafood.webp"} alt="Safood Logo" /></Box>
+                    <Box className={"burak-box"}><img src={"/img/sweets.webp"} alt="Safood Logo" /></Box>
+                    <Box className={"burak-box"}><img src={"/img/doner.webp"} alt="Safood Logo" /></Box>
                    
                    
                 </Stack>
+             </div>
+
+             <div className={"address"}>
+                  <Container>
+                    <Stack className={"address-area"}>
+                        <Box className={"title"}>Our address</Box>
+                        <iframe
+                        style={{marginTop: "60"}}
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4304.009129507858!2d72.35687446020327!3d40.76280806409186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bcedb3adddd9f3%3A0xa6dbbc6cd1305025!2sLazeez!5e0!3m2!1sru!2skr!4v1763290728575!5m2!1sru!2skr"
+                        width="1320"
+                        height="500"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        >
+
+                        </iframe>
+                    </Stack>
+                  </Container>
              </div>
 
 
         </div>
 
        
-
     );
 }
+
+
+
+
+

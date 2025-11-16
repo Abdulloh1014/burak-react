@@ -19,7 +19,14 @@
 
 .inputt{
     margin-right: 40px;
+    
 }
+
+.inputt input{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
 .products-page .products .rest-sarlavxa-bolim {
      display: flex;
      width: 1220px;
@@ -67,13 +74,6 @@
 }
 
 
-.products-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 20px;
-}
 
 .product-card {
   width: 260px;
@@ -186,7 +186,7 @@
 
 .products .cards-frame {
     display: flex;
-    height: auto;
+    height: 800px;
     width: auto;
     flex-direction: row;
     margin-top: 50px;
@@ -308,58 +308,12 @@
 
 
 /** BRAND LOGO */
-/* .logo-text{
 
-width: 305px;
-height: 46px;
-color: rgba(227, 192, 141, 1);
-font-family: Roboto;
-font-size: 36px;
-font-weight: 700;
-line-height: 42px;
-letter-spacing: 0%;
+.burak-box img {
+    width: 228px;
+    height: 321px;
+} 
 
-}
-
-
-
-
-.brand-logo{
-  width: 100%;
-    height: 830px;
-    background-color: #1a374e;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.burak-foto .burak-box img{
-    width: 50px;
-    height: 69px;
-}
-
-.brand-logo .burak-foto .burak-box{
-    display: flex;
-    flex-direction: row;
-
-
-} */
-
-
-
-
-
-
-.brand-logo {
-    width: 100%;
-    height: auto; /* 830px o‘rniga auto, responsive bo‘lishi uchun */
-    background-color: #1a374e;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* markazlashtirish */
-    padding: 50px 0; /* tepada va pastda bo‘sh joy */
-    gap: 40px; /* logo va rasmlar orasidagi bo‘sh joy */
-}
 
 .logo-text {
     font-family: Roboto, sans-serif;
@@ -368,18 +322,70 @@ letter-spacing: 0%;
     line-height: 42px;
     color: #e3c08d;
     text-align: center;
+    margin-top: 60px;
 }
 
-.burak-foto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* rasmlarni markazga joylash */
-    gap: 30px; /* rasmlar orasidagi masofa */
-    flex-wrap: wrap; /* ekran kichik bo‘lsa pastga tushadi */
+.brand-logo {
+   height: 630px;
+   width: 100%;
+ background: rgba(13, 21, 24, 1);
+ margin-top: 55px;
 }
 
-.burak-box img {
-    width: 50px;
-    height: 69px;
-    object-fit: cover;
+.brand-logo .burak-foto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 53px;
+      margin-top: 60px;
+
 }
+
+.brand-logo .burak-foto .burak-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 238px;
+    height: 331px;
+    border-radius: 20px;
+box-shadow: 0px 0px 22px 0px rgba(228, 212, 212, 1);
+background: rgba(13, 21, 24, 1);
+}
+
+
+/** !!!!!!!!!!!!!!!!  ADDRESS !!!!!!!!!!!!!!!!!!!  **/
+
+
+
+
+.address .address-area .title{
+  
+        font-family: "Dancing Script";
+    font-style: normal; 
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+
+.address .address-area iframe{
+  display: flex;
+  cursor: pointer;
+}
+
+
+.address .address-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+
+
+
+/** ChosenProduct */
