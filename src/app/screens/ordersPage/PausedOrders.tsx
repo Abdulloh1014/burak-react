@@ -17,14 +17,14 @@ export default function PausedOrders () {
                                <Box key={index2} className={"orders-name-price"}> 
                                  <img
                                  src={"/img/lavash.webp"}
-                                 className={"order=dish-img"}
+                                 className={"order-dish-img"}
                                   />
                                   <p className={"title-dish"}>Lavash</p>
                                   <Box className={"price-box"}>
                                     <p>$9</p>
                                     <img src={"/icons/close.svg"} />
                                     <p>2</p>
-                                    <img src={"/icons.pause.svg"} />
+                                    <img src={"/icons/pause.svg"} />
                                     <p style={{ marginLeft: "15" }}>$24</p> 
 
                                   </Box>
@@ -41,7 +41,7 @@ export default function PausedOrders () {
                                 <p>Delivery cost</p>
                                 <p>$2</p>
                                 <img
-                                src={"/const/pause.svg"}
+                                src={"/icons/pause.svg"}
                                 style={{ marginLeft: "20px" }} 
                                 />
                                 <p>Total</p>

@@ -6,8 +6,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PausedOrders from "./PausedOrders";
 import ProcessOrders from "./ProcessOrders";
+import PausedOrders from "./PausedOrders";
 import FinishedOrders from "./FinishedOrders";
 import "../../../css/order.css";
 
@@ -31,9 +31,9 @@ export default function OrdersPage() {
                          aria-label="basic tabs example"
                          className={"table_list"}
                          >
-                          <Tab label="PAUSED ORDERS" value={1}/>
-                          <Tab label="PROCESS ORDERS" value={2}/>
-                          <Tab label="FINISH ORDERS" value={3}/>
+                          <Tab label="PAUSED ORDERS" value={"1"}/>
+                          <Tab label="PROCESS ORDERS" value={"2"}/>
+                          <Tab label="FINISH ORDERS" value={"3"}/>
 
                          </Tabs>
                        </Box>
@@ -49,7 +49,7 @@ export default function OrdersPage() {
 
               <Stack className={"order-right"}>
                 <Box className={"order-info-box"}>
-                  <Box className={"member=box"}>
+                  <Box className={"member-box"}>
                      <div className={"order-user-img"}>
                         <img
                          src={"/icons/default-user.svg"}
@@ -62,6 +62,64 @@ export default function OrdersPage() {
                             />
                          </div>
                      </div>
+                     <p>Justin</p>
+                     <p>User</p>
+                     <div className={"line"}></div>
+                     <div>
+                        <img 
+                        src={"/icons/location.svg"}
+                        className={"user-location"}
+                        />
+                        <p>South Korea Daejeon</p>
+                     </div>
+                  </Box>
+                </Box>
+
+                <Box>
+                  <Box className={"input-card"}>
+                     <input 
+                     type="text"
+                     placeholder="card number 09890 7678 98745"
+                     style={{width: "333px",
+                           height: "36px",}}
+                     />
+                  </Box>
+                  <Box className={"input-sana"}>
+                     <input
+                     type="text"
+                     placeholder="07/24"
+                     style={{width: "133px",
+                           height: "36px",}}
+                      />
+                         <input
+                     type="text"
+                     placeholder="CVV:010"
+                     style={{width: "133px",
+                           height: "36px",}}
+                      />
+
+                  </Box>
+                  <Box className={"input-name"}> 
+                          <input 
+                     type="text"
+                     placeholder="Justin Robertson"
+                     style={{width: "333px",
+                           height: "36px",}}
+                     />
+                  </Box>
+                  <Box>
+                     <img 
+                     src={"/icons/western-card.svg"}
+                     />
+                     <img 
+                     src={"/icons/master-card.svg"}
+                     />
+                     <img 
+                     src={"/icons/paypal-card.svg"}
+                     />
+                     <img 
+                     src={"/icons/visa-card.svg"}
+                     />
                   </Box>
                 </Box>
               </Stack>
