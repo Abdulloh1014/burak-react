@@ -22,7 +22,7 @@ export default function ProcessOrders () {
                                  src={"/img/kebab.webp"}
                                  className={"order-dish-img"}
                                   />
-                                  <p className={"title-dish"}>Lavash</p>
+                                  <p className={"title-dish"}>Kebab</p>
                                   <Box className={"price-box"}>
                                     <p>$11</p>
                                     <img src={"/icons/close.svg"} />
