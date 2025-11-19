@@ -46,6 +46,11 @@
     width: 100%;
 }
 
+.order-dish-img{
+    margin-top: 9px;
+}
+
+
 .order-page .order-right .order-info-box .member-box .liner {
     width: 100%;
     border: 1px solid #a1a1a1;
@@ -65,6 +70,17 @@
     height: 117px;
     border-radius: 67px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.order-page .order-main-box .order-box-scroll .orders-name-price .title-dish {
+     color: rgba(0, 0, 0, 1);
+
+font-family: 'Commissioner';
+font-size: 22px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: left;
 }
 
 .order-page .order-info-box .order-user-icon-box {
@@ -286,8 +302,21 @@ text-align: left;
     display: flex;
     margin-top: 10px;
     gap: 30px;
-    width: 250px;
+    width: 290px;
     height: 40px;
+}
+
+.order-page .order-main-box .total-btn .pay-button{
+    background-color:rgba(112, 180, 91, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-left: 70px;
+    font-weight: bolder;
+
+}
+
+.order-page .order-main-box .total-btn .cancel-button{
+        font-weight: bolder;
+
 }
 
 
@@ -298,8 +327,15 @@ text-align: left;
     margin-top: 15px;
     padding: 0px;
     background-color:  rgba(58, 135, 203, 1);
-     color: rgba(255, 255, 255, 1)
+     color: rgba(255, 255, 255, 1);
+     border-radius: 10px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+font-weight: bolder;
+     
 }
+
+
+
 
 .order-page .order-main-box {
        border-radius: 16px;

@@ -9,7 +9,7 @@ export default function FinishedOrders () {
     return (
         <TabPanel value={"3"}>
             <Stack>
-               {[1, 2].map((ele, index) => {
+               {[].map((ele, index) => {
                 return (
                     <Box key={index} className={"order-main-box"}>
                         <Box className={"order-box-scroll"}>
@@ -55,7 +55,7 @@ export default function FinishedOrders () {
                 );
                })}
 
-               {false && (
+               {true && (
                 <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
                     <img
                     src={"/icons/noimage-list.svg"}
