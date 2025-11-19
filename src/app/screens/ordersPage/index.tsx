@@ -31,7 +31,7 @@ export default function OrdersPage() {
                          aria-label="basic tabs example"
                          className={"table_list"}
                          >
-                          <Tab label="PAUSED ORDERS" value={"1"}/>
+                          <Tab label="PAUSEDwwwww ORDERS" value={"1"}/>
                           <Tab label="PROCESS ORDERS" value={"2"}/>
                           <Tab label="FINISH ORDERS" value={"3"}/>
 
@@ -45,6 +45,8 @@ export default function OrdersPage() {
                     </Stack>
                  </TabContext>
               </Stack>
+
+
 
 
               <Stack className={"order-right"}>
@@ -62,24 +64,30 @@ export default function OrdersPage() {
                             />
                          </div>
                      </div>
-                     <p>Justin</p>
-                     <p>User</p>
-                     <div className={"line"}></div>
-                     <div>
+                     <p className={"order-user-name"}>Albert</p>
+                     <p className={"order-user"}>USER</p>
+                     <div className={"liner"}></div>
+
+                     <div className={"location"}>
                         <img 
                         src={"/icons/location.svg"}
                         className={"user-location"}
                         />
-                        <p>South Korea Daejeon</p>
+                        <p className={"location-info"}>South Korea Daejeon</p>
                      </div>
                   </Box>
                 </Box>
 
-                <Box>
-                  <Box className={"input-card"}>
+
+
+
+
+
+                <Stack className={"input-card-info"}>
+                  <Box className={"input-card-number"}>
                      <input 
                      type="text"
-                     placeholder="card number 09890 7678 98745"
+                     placeholder="Card number 09890 7678 98745"
                      style={{width: "333px",
                            height: "36px",}}
                      />
@@ -102,26 +110,30 @@ export default function OrdersPage() {
                   <Box className={"input-name"}> 
                           <input 
                      type="text"
-                     placeholder="Justin Robertson"
+                     placeholder="Albert Robertson"
                      style={{width: "333px",
                            height: "36px",}}
                      />
                   </Box>
-                  <Box>
+                  <Stack className={"input-check-cards"}>
                      <img 
                      src={"/icons/western-card.svg"}
+                     className={"plast"}
                      />
                      <img 
                      src={"/icons/master-card.svg"}
+                      className={"plast"}
                      />
                      <img 
                      src={"/icons/paypal-card.svg"}
+                      className={"plast"}
                      />
                      <img 
                      src={"/icons/visa-card.svg"}
+                      className={"plast"}
                      />
-                  </Box>
-                </Box>
+                  </Stack>
+                </Stack>
               </Stack>
 
 

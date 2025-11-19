@@ -47,6 +47,7 @@ export default function PausedOrders () {
                                 <p>Total</p>
                                 <p>$20</p>
                             </Box>
+                            <Box className={"total-btn"}>
                             <Button
                               variant="contained"
                               color="secondary"
@@ -57,6 +58,8 @@ export default function PausedOrders () {
                             <Button variant="contained" className={"pay-button"}>
                                 Payment
                             </Button>
+                            </Box>
+                     
                         </Box>
 
                     </Box>
