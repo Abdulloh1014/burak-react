@@ -274,7 +274,7 @@ text-align: left;
 
 
 .order-page .order-main-box .total-price-box .box-total{
-    width: 100%;
+    width: 540px;
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -291,6 +291,16 @@ text-align: left;
 }
 
 
+.order-page .order-main-box .total-price-box .verify-button{
+    margin-left: 47px;
+    width: 148px;
+    height: 36px;
+    margin-top: 15px;
+    padding: 0px;
+    background-color:  rgba(58, 135, 203, 1);
+     color: rgba(255, 255, 255, 1)
+}
+
 .order-page .order-main-box {
        border-radius: 16px;
     border-radius: 16px;
@@ -304,3 +314,8 @@ background: rgba(248, 248, 254, 1);
     width: 20px;
     height: 20px;
 } */
+
+.order-page .order-main-box .total-price-box .box-total img {
+    width: 20px;
+    object-fit: contain;
+}

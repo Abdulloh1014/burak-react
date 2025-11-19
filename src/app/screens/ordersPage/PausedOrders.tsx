@@ -37,12 +37,12 @@ export default function PausedOrders () {
                             <Box className={"box-total"}>
                                 <p>Product price</p>
                                 <p>$18</p>
-                                <img src={"/icons/plus.svg"} style={{ marginLeft: "20px"}} />
+                                <img src={"/icons/plus.svg"}  />
                                 <p>Delivery cost</p>
                                 <p>$2</p>
                                 <img
                                 src={"/icons/pause.svg"}
-                                style={{ marginLeft: "20px" }} 
+                                
                                 />
                                 <p>Total</p>
                                 <p>$20</p>
