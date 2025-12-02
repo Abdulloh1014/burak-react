@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
-import  HomePage  from "./screens/homePage";
+// import  HomePage  from "./screens/homePage";
 import  ProductsPage  from "./screens/productsPage";
 import  OrdersPage  from "./screens/ordersPage";
 import  UserPage  from "./screens/userPage";
@@ -11,6 +11,7 @@ import  HelpPage  from "./screens/helpPage";
 import "../css/app.css";
 import "../css/navbar.css";
 import "../css/footer.css";
+import Test from "./screens/Test"
 function App() {
   const location = useLocation();
   return (
@@ -30,7 +31,8 @@ function App() {
             <HelpPage />
           </Route>
           <Route path="/">
-            <HomePage />
+          <Test />
+            {/* <HomePage /> */}
           </Route>
         </Switch>
         <Footer/>

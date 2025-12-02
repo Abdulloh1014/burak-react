@@ -21,11 +21,11 @@ export default function PausedOrders () {
                                   />
                                   <p className={"title-dish"}>Lavash</p>
                                   <Box className={"price-box"}>
-                                    <p>$9</p>
+                                    <p>$ 9</p>
                                     <img src={"/icons/close.svg"} />
                                     <p>2</p>
                                     <img src={"/icons/pause.svg"} />
-                                    <p style={{ marginLeft: "15" }}>$24</p> 
+                                    <p style={{ marginLeft: "15" }}>$ 24</p> 
 
                                   </Box>
                                </Box>
@@ -36,16 +36,16 @@ export default function PausedOrders () {
                         <Box className={"total-price-box"}>
                             <Box className={"box-total"}>
                                 <p>Product price</p>
-                                <p>$18</p>
+                                <p>$ 8</p>
                                 <img src={"/icons/plus.svg"}  />
                                 <p>Delivery cost</p>
-                                <p>$2</p>
+                                <p>$ 2</p>
                                 <img
                                 src={"/icons/pause.svg"}
                                 
                                 />
                                 <p>Total</p>
-                                <p>$20</p>
+                                <p>$ 20</p>
                             </Box>
                             <Box className={"total-btn"}>
                             <Button

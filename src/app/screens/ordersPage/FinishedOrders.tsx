@@ -22,11 +22,11 @@ export default function FinishedOrders () {
                                   />
                                   <p className={"title-dish"}>Kebab</p>
                                   <Box className={"price-box"}>
-                                    <p>$12</p>
+                                    <p>$ 12</p>
                                     <img src={"/icons/close.svg"} />
                                     <p>2</p>
                                     <img src={"/icons/pause.svg"} />
-                                    <p style={{ marginLeft: "15" }}>$24</p> 
+                                    <p>$ 24</p> 
 
                                   </Box>
                                </Box>
@@ -37,16 +37,16 @@ export default function FinishedOrders () {
                         <Box className={"total-price-box"}>
                             <Box className={"box-total"}>
                                 <p>Product price</p>
-                                <p>$24</p>
-                                <img src={"/icons/plus.svg"} style={{ marginLeft: "20px"}} />
+                                <p>$ 24</p>
+                                <img src={"/icons/plus.svg"}  />
                                 <p>Delivery cost</p>
-                                <p>$2</p>
+                                <p>$ 2</p>
                                 <img
                                 src={"/icons/pause.svg"}
-                                style={{ marginLeft: "20px" }} 
+                                 
                                 />
                                 <p>Total</p>
-                                <p>$26</p>
+                                <p>$ 26</p>
                             </Box>
                             
                         </Box>

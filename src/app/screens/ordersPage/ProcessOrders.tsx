@@ -24,11 +24,11 @@ export default function ProcessOrders () {
                                   />
                                   <p className={"title-dish"}>Kebab</p>
                                   <Box className={"price-box"}>
-                                    <p>$11</p>
+                                    <p>$ 11</p>
                                     <img src={"/icons/close.svg"} />
                                     <p>2</p>
                                     <img src={"/icons/pause.svg"} />
-                                    <p style={{ marginLeft: "15" }}>$22</p> 
+                                    <p style={{ marginLeft: "15" }}>$ 22</p> 
 
                                   </Box>
                                </Box>
@@ -39,16 +39,16 @@ export default function ProcessOrders () {
                         <Box className={"total-price-box"}>
                             <Box className={"box-total"}>
                                 <p>Product price</p>
-                                <p>$22</p>
-                                <img src={"/icons/plus.svg"} style={{ marginLeft: "20px"}} />
+                                <p>$ 22</p>
+                                <img src={"/icons/plus.svg"} />
                                 <p>Delivery cost</p>
-                                <p>$2</p>
+                                <p>$ 2</p>
                                 <img
                                 src={"/icons/pause.svg"}
-                                style={{ marginLeft: "20px" }} 
+                               
                                 />
                                 <p>Total</p>
-                                <p>$24</p>
+                                <p>$ 24</p>
                             </Box>
                             <p className={"data-campl"}>
                               {moment().format("YY-MM-DD HH:mm")}</p>
