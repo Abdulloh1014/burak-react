@@ -5,7 +5,7 @@ import Basket from "./Basket";
 
 
 export default function OtherNavbar () {
-    const  authMember  = true;
+    const  authMember  = null;
     return <div className="other-navbar"> 
     <Container className="home-container">
         <Stack className="menu">
