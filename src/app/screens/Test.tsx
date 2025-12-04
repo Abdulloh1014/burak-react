@@ -17,17 +17,17 @@ class Test extends Component {
     this.setState({color: "blue", brand: "Tesla", model: "Model S", year: 2023});
   }
 
-componentDidMount() {
+componentDidMount() {                 // componentDidMount — Komponent yuklangandan keyin
     console.log("componentDidMount")
     // runs after first render. => RETRIEVE DATA FROM BACKEND SERVER
 }
 
-componentWillUnmount() {
+componentWillUnmount() {             //componentWillUnmount — Komponent o‘chishidan oldin
     console.log("componentWillUnmount")
     // rusn before component unmount
 }
 
-componentDidUpdate() {}
+componentDidUpdate() {}            //componentDidUpdate — Komponent yangilangandan keyin
 
 
 
