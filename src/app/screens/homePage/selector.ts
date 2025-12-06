@@ -16,5 +16,5 @@ export const retrieveNewishes = createSelector(
 
 export const retrieveTopUsers = createSelector(
     selectHomePage,
-    (HomePage) => HomePage.popularDishes
+    (HomePage) => HomePage.topUsers
 );
