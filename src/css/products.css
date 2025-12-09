@@ -95,9 +95,7 @@
 
 
 
-.product-narx {
-  /* background-color: #ff8c00; */
-}
+
 
 .product-www {
   /* background-color: aqua; */
@@ -205,10 +203,12 @@ text-align: left;
 .products .cards-frame {
     display: flex;
     height: 800px;
-    width: auto;
+    width: 100%;
     flex-direction: row;
     margin-top: 50px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+     align-items: flex-start;
+     /* background-color: aqua; */
 }
 
 
@@ -269,6 +269,7 @@ text-align: left;
     flex-direction: row;
     align-items: center;
     margin: 0px;
+    
 
 }
 
