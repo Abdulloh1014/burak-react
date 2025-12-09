@@ -95,7 +95,25 @@
 
 
 
+.product-narx {
+  /* background-color: #ff8c00; */
+}
 
+.product-www {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgba(227, 192, 141, 1);
+
+font-family: Poppins;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: left;
+}
 
 .product-sale {
   position: absolute;
@@ -110,7 +128,7 @@
   border-radius: 12px;
   font-size: 12px;
   height: 30px;
-  width: 90px;
+  width:110px;
 }
 
 .product-img button {
