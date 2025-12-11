@@ -126,7 +126,7 @@ text-align: left;
   border-radius: 12px;
   font-size: 12px;
   height: 30px;
-  width:110px;
+  width:100px;
 }
 
 .product-img button {
@@ -182,7 +182,7 @@ text-align: left;
 }
 
 .no-data {
-    width: 100%;
+    /* width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -194,6 +194,17 @@ text-align: left;
     font-size: 30px;
     line-height: 34px;
     color: #e3c08d;
+    margin-left: 300px; */
+    width: 100%;
+  height: 500px;
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: "Poppins";
+  font-size: 30px;
+  color: #e3c08d;
 }
 
 
@@ -581,4 +592,10 @@ background: rgba(13, 21, 24, 1);
   font-size: 36px;
   line-height: 43px;
   margin-top: 40px;
+}
+
+.basket-icon {
+   width: 24px;
+  height: 24px;
+ 
 }
