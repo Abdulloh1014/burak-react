@@ -20,7 +20,7 @@ function App() {
   const location = useLocation();
   const { cartItems, onAdd, onRemove,  onDelete, onDeleteAll, } = useBasket();
   const [signupOpen, setSignupOpen] = useState<boolean>(false)
-  const [loginOpen, setLoginOpen] = useState<boolean>(true)
+  const [loginOpen, setLoginOpen] = useState<boolean>(false)
 
 /** HANDLERS **/
   
@@ -33,12 +33,18 @@ const handleLoginClose = () => setLoginOpen(false);
         <HomeNavbar 
         cartItems={cartItems} onRemove={onRemove} 
         onAdd={onAdd}
-        onDelete={onDelete} onDeleteAll={onDeleteAll}/>
+        onDelete={onDelete} onDeleteAll={onDeleteAll}
+        setSignupOpen={setSignupOpen}
+        setLoginOpen={setLoginOpen}
+        />
         ) : (
         <OtherNavbar 
         cartItems= {cartItems} onRemove={onRemove} 
         onAdd={onAdd}
-        onDelete={onDelete} onDeleteAll={onDeleteAll}/> 
+        onDelete={onDelete} onDeleteAll={onDeleteAll}
+        setSignupOpen={setSignupOpen}
+        setLoginOpen={setLoginOpen}
+        /> 
 
         )}
         <Switch>

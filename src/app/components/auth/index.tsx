@@ -84,7 +84,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
       const member = new MemberService();
       const result = await member.signup(signupInput);
 
-     // Saveng Authenticated user
+     // Saving Authenticated user
 
       handleSignupClose();
     } catch(err) {
@@ -108,7 +108,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
       const member = new MemberService();
       const result = await member.login(loginInput);
 
-       // Saveng Authenticated user
+       // Saving Authenticated user
 
 
       handleLoginClose();
