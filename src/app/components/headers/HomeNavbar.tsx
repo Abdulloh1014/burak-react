@@ -53,6 +53,7 @@ export default function HomeNavbar (props: HomeNavbarProps) {
                  className="brand-logo" src="/icons/burak.svg"/>
               </NavLink>
            </Box>
+           
            <Stack 
           className="links">
             <Box className={"hover-line"}>   
@@ -81,7 +82,7 @@ export default function HomeNavbar (props: HomeNavbarProps) {
             onDelete={onDelete}
             onDeleteAll={onDeleteAll}
            />
-
+           
            {!authMember ? (
             <Box>
                 <Button 

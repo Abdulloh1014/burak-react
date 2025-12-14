@@ -42,7 +42,9 @@ export default function Basket(props: BasketProps) {
     setAnchorEl(null);
   };
   return (
+    
     <Box className={"hover-line"}>
+     
       <IconButton
         aria-label="cart"
         id="basic-button"
@@ -51,11 +53,43 @@ export default function Basket(props: BasketProps) {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <Badge badgeContent={cartItems.length} color="secondary">
-          <img src={"/icons/shopping-cart.svg"} className="basket-icon" />
+
         
-        </Badge>
+        <Box sx={{ position: "relative", display: "inline-block" }}>
+  <img src="/icons/shopping-cart.svg" style={{ width: 24, height: 24 }} />
+  {cartItems.length > 0 && (
+    <Box
+      sx={{
+        position: "absolute",
+        top: -5,
+        right: -5,
+        backgroundColor: "red",
+        color: "white",
+        borderRadius: "50%",
+        width: 18,
+        height: 18,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 12,
+      }}
+    >
+      {cartItems.length}
+    </Box>
+  )}
+</Box>
+
+
+
+
+
       </IconButton>
+
+   
+     
+
+
+
       <Menu
         anchorEl={anchorEl}
         id="account-menu"
