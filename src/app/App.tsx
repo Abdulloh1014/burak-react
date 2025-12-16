@@ -8,10 +8,8 @@ import  OtherNavbar from "./components/headers/OtherNavbar";
 import  Footer  from "./components/footer";
 import  HomeNavbar  from "./components/headers/HomeNavbar";
 import  HelpPage  from "./screens/helpPage";
-import Test from "./screens/Test"
 import useBasket from "./hooks/useBasket";
 import AuthenticationModal from "./components/auth";
-import { T } from "../lib/types/common";
 import { sweetErrorHandling, sweetTopSuccessAlert } from "../lib/sweetAlert";
 import { Messages } from "../lib/config";
 import MemberService from "./services/MemberService";
