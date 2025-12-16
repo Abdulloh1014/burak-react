@@ -1,4 +1,4 @@
-import {useState, SyntheticEvent} from "react"
+import {useState, SyntheticEvent, useEffect} from "react"
 import { Container, Stack, Box } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -10,8 +10,10 @@ import FinishedOrders from "./FinishedOrders";
 import { useDispatch } from "react-redux";
 import { Dispatch } from "@reduxjs/toolkit";
 import {setPausedOrders, setProcessOrders, setFinishedOrders} from "./slice";
-import { Order } from "../../../lib/types/order";
+import { Order, OrderInquiry } from "../../../lib/types/order";
 import "../../../css/order.css";
+import { OrderStatus } from "../../../lib/enums/order.enum";
+import OrderService from "../../services/OrderService";
 
 
 /** REDUX SLICE & SELECTOR   */
@@ -29,7 +31,33 @@ export default function OrdersPage() {
    const { setPausedOrders, setProcessOrders, setFinishedOrders } = 
    actionDispatch(useDispatch());
    const [value, setValue] = useState("1");
+   const [orderInquiry, setOrderInquiry] = useState<OrderInquiry>({
+      page: 1,
+      limit: 5,
+      orderStatus: OrderStatus.PAUSE,
 
+   })
+
+
+   useEffect(() => {
+     const order = new OrderService();
+
+     order
+     .getMyOrder({ ...orderInquiry, orderStatus: OrderStatus.PAUSE })
+     .then((data) => setPausedOrders(data))
+     .catch((err) => console.log(err));
+
+     order
+     .getMyOrder({ ...orderInquiry, orderStatus: OrderStatus.PROCESS })
+     .then((data) => setProcessOrders(data))
+     .catch((err) => console.log(err));
+
+     order
+     .getMyOrder({ ...orderInquiry, orderStatus: OrderStatus.FINISH })
+     .then((data) => setFinishedOrders(data))
+     .catch((err) => console.log(err));
+     
+   }, [orderInquiry])
    /** Handlers */
 
   const handleChange = ( e: SyntheticEvent, newValue: string) => {

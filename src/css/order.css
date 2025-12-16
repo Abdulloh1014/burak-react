@@ -221,13 +221,33 @@ text-align: left;
     /* background-color: brown; */
 }
 
-.order-page .order-main-box .order-box-scroll .orders-name-price img{
-    width: 87px;
+/* .order-page .order-main-box .order-box-scroll .orders-name-price img{
+    width: 57px;
     height: 57px;
     border-radius: 50%;
     gap: 30px;
     margin-bottom: 10px;
+} */
+
+.order-dish-img{
+    width: 57px;
+    height: 57px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
 }
+
+
+/* .order-page .order-main-box .order-box-scroll .orders-name-price img{
+    width: 87px;
+    height: 57px;
+    object-fit: cover;   
+    border-radius: 8px; 
+} */
+
+
+
 
 .order-page .order-main-box .order-box-scroll{
     display: flex;
@@ -245,6 +265,7 @@ text-align: left;
     width: 800px;
     height: auto;
     gap: 40px;
+     align-items: center;
 }
 
 .order-page .order-main-box .order-box-scroll .orders-name-price .price-box  img{
@@ -273,6 +294,8 @@ text-align: left;
     height: auto;
     align-items: center; 
     gap: 13px;
+    width: 525px;
+    height: 60px;
 }
 
 
@@ -350,4 +373,16 @@ background: rgba(248, 248, 254, 1);
 .order-page .order-main-box .total-price-box .box-total img {
     width: 20px;
     object-fit: contain;
+}
+
+
+
+
+
+.order-page .order-main-box .order-box-scroll {
+    display: flex;
+    flex-direction: column;
+    width: 830px;
+    max-height: 230px; /* kerakli balandlik */
+    overflow-y: auto;  /* vertical scroll paydo bo‘ladi */
 }
