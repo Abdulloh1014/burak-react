@@ -6,12 +6,16 @@ import { useState } from "react";
 import { MemberUpdateInput } from "../../../lib/types/member";
 import { T } from "../../../lib/types/common";
 import { sweetErrorHandling, sweetTopSmallSuccessAlert } from "../../../lib/sweetAlert";
-import { Messages } from "../../../lib/config";
+import { Messages, serverApi } from "../../../lib/config";
 import MemberService from "../../services/MemberService";
 
 export function Settings() {
   const {authMember, setAuthMember} = useGlobals();
-
+  const [memberImage, setMemberImage] = useState<string>(
+    authMember?.memberImage
+    ? `${serverApi}/${authMember.memberImage}`
+    : "/icons/default-user.svg"
+  );
   const [memberUpdateInput, setMemberUpdateInput] = 
   useState<MemberUpdateInput>({
        memberNick: authMember?.memberNick,
@@ -61,17 +65,34 @@ export function Settings() {
       console.log(err)
       sweetErrorHandling(err).then();
     }
-  }
+  };
+
+  const handleImageViewer = (e: T) => {
+    const file = e.target.files[0];
+    console.log("file:", file);
+    const fileType = file.type,
+    validateImageTypes = ["image/jpg", "image/jpeg", "image/png"];
+    if(!validateImageTypes.includes(fileType)) {
+      sweetErrorHandling(Messages.error5).then();
+    } else{
+      if(file){
+        memberUpdateInput.memberImage = file;
+        setMemberUpdateInput({ ...memberUpdateInput });
+        setMemberImage(URL.createObjectURL(file))
+      }
+    
+    }
+  };
 
   return (
     <Box className={"settings"}>
       <Box className={"member-media-frame"}>
-        <img src={"/icons/default-user.svg"} className={"mb-image"} />
+        <img src={memberImage} className={"mb-image"} />
         <div className={"media-change-box"}>
           <span>Upload image</span>
           <p>JPG, JPEG, PNG formats only!</p>
           <div className={"up-del-box"}>
-            <Button component="label">
+            <Button component="label" onChange={handleImageViewer} >
               <CloudDownloadIcon />
               <input type="file" hidden />
             </Button>
