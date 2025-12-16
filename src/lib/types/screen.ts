@@ -30,5 +30,5 @@ export interface ProductPageState {
 export interface OrdersPageState {
     pausedOrders: Order[];
     processOrders: Order[];
-    pfinishedOrders: Order[];
+    finishedOrders: Order[];
 };

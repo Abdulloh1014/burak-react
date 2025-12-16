@@ -3,6 +3,7 @@
     height: auto;
     background: #f8f8ff;
     display: flex;
+    /* background-color: rgba(58, 135, 203, 1); */
 }
 
 .order-page .order-container {
@@ -10,6 +11,10 @@
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
+        /* background-color: rgba(58, 135, 203, 1); */
+        display: flex;
+        justify-content: space-between;
+
 }
 
 .order-page .order-left {
@@ -218,7 +223,7 @@ text-align: left;
     width: 890px;
     height: auto;
     padding: 20px;
-    /* background-color: brown; */
+    /* background-color: rgb(77, 42, 165); */
 }
 
 /* .order-page .order-main-box .order-box-scroll .orders-name-price img{
@@ -263,10 +268,17 @@ text-align: left;
     flex-direction: row;
     justify-content: space-between;
     width: 800px;
-    height: auto;
+    height: 150;
     gap: 40px;
      align-items: center;
 }
+
+.order-page .order-main-box .order-box-scroll .orders-name-price .title-dish {
+/* background-color: tomato; */
+width: 200px;
+height: auto;
+}
+    
 
 .order-page .order-main-box .order-box-scroll .orders-name-price .price-box  img{
     width: 27px;
@@ -283,6 +295,7 @@ font-weight: 400;
 line-height: 27px;
 letter-spacing: 0%;
 text-align: left;
+
 }
 
 .order-page .order-main-box .order-box-scroll .orders-name-price .price-box{

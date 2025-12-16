@@ -16,5 +16,5 @@ export const retrieveProcessOrders = createSelector(
 
 export const retrieveFinishedOrders = createSelector(
     selectOrdersPage,
-    (OrdersPage) => OrdersPage.pfinishedOrders
+    (OrdersPage) => OrdersPage.finishedOrders
 );
