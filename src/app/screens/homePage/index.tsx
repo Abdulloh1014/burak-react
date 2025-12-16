@@ -11,9 +11,10 @@ import {setNewDishes, setPopularDishes, setTopUsers} from "./slice";
 import { Product } from "../../../lib/types/product";
 import ProductService from "../../services/ProductService";
 import { ProductCollection } from "../../../lib/enums/product.enum";
-import "./../../../css/home.css";
 import MemberService from "../../services/MemberService";
 import { Member } from "../../../lib/types/member";
+import "./../../../css/home.css";
+
 
 
 

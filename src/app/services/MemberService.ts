@@ -39,13 +39,15 @@ class MemberService {
     public async signup(input: MemberInput): Promise<Member> {
         try {
             const url = this.path + "/member/signup";
-            const result = await axios.post(url, input, { withCredentials: true });
+            const result = await axios.post(url, input, { withCredentials: true });  //Cookie (session, refresh token va h.k.) ni brauzerdan serverga birga yuboradi
             console.log("signup", result);
 
             const member: Member = result.data.member;
             console.log("member:", member);
-            localStorage.setItem("memberData", JSON.stringify(member));
-
+            localStorage.setItem("memberData", JSON.stringify(member));   
+                      //.  setItem() — `localStorage`ga ma’lumot saqlaydi.
+                      //.  stringify() — obyekt yoki massivni **string (matn)** ko‘rinishiga o‘giradi.
+      
             return member;
 
         } catch (err) {

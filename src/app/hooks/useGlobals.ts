@@ -5,6 +5,7 @@ import { Member } from "../../lib/types/member";
 interface GlobalInterFace {
     authMember: Member | null;
     setAuthMember: (member: Member | null) => void;
+    
 }
 
 export const GlobalContext = createContext<GlobalInterFace | undefined>(

@@ -75,6 +75,7 @@ export default function HomeNavbar (props: HomeNavbarProps) {
               <Box  className={"hover-line"}>   
               <NavLink to="/help" activeClassName={"underline"}>Help</NavLink>
            </Box>
+           
            <Basket 
            cartItems= {cartItems} 
            onAdd={onAdd}

@@ -5,7 +5,7 @@ import { CartItem } from "../../lib/types/search";
 
 const useBasket = () => {
     const cartJson: string | null = localStorage.getItem("cartData");
-  const currentCart = cartJson ? JSON.parse(cartJson) : [];
+  const currentCart = cartJson ? JSON.parse(cartJson) : [];    //parse() — stringni object (yoki array) ga aylantiradi.
   const [ cartItems, setCartItems ] = useState<CartItem[]>(currentCart);
 
   const onAdd = (input: CartItem) => {
@@ -18,7 +18,8 @@ const useBasket = () => {
           );
           setCartItems(cartUpdate);
           localStorage.setItem("cartData", JSON.stringify(cartUpdate));
-     } else {
+     } else {          // //.  setItem() — `localStorage`ga ma’lumot saqlaydi. biz belgilagan nom bilan
+                       //.  stringify() — obyekt yoki massivni **string (matn)** ko‘rinishiga o‘giradi.
          const cartUpdate = [...cartItems, {...input}];
           setCartItems(cartUpdate);
           localStorage.setItem("cartData", JSON.stringify(cartUpdate));

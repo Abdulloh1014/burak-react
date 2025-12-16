@@ -53,9 +53,7 @@ export default function Basket(props: BasketProps) {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-
-        
-        <Box sx={{ position: "relative", display: "inline-block" }}>
+       <Box sx={{ position: "relative", display: "inline-block" }}>
   <img src="/icons/shopping-cart.svg" style={{ width: 24, height: 24 }} />
   {cartItems.length > 0 && (
     <Box
@@ -63,11 +61,11 @@ export default function Basket(props: BasketProps) {
         position: "absolute",
         top: -5,
         right: -5,
-        backgroundColor: "red",
-        color: "white",
+        backgroundColor: "goldenrod",
+        color: "#f8frff",
         borderRadius: "50%",
-        width: 18,
-        height: 18,
+        width: 15,
+        height: 15,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -78,17 +76,7 @@ export default function Basket(props: BasketProps) {
     </Box>
   )}
 </Box>
-
-
-
-
-
-      </IconButton>
-
-   
-     
-
-
+ </IconButton>
 
       <Menu
         anchorEl={anchorEl}
